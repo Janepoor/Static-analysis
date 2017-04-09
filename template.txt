@@ -1,0 +1,7 @@
+Static ngram analysis results for $input_file
+==========================================
+length_ngrams(n_length) = $n_length
+length_slide(s_length)  = $s_length
+Only Top 20 are shown
+++++++++++++++++++++++++++++++++++++++++++
+HEX_VALUE:COUNT
