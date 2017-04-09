@@ -55,19 +55,17 @@ class Ngram():
     # Generating the stats to the output
     def gen_stat(self,sorted,output):
         # Sorted is Ngram dictionary sorted by value, output is output file name
-        with open('template.txt') as t:
-            src=Template(t.read())
-            d={'input_file':self.input_file,
-               'n_length': self.n_length,
-                's_length': self.s_length
-            }
-            template =src.substitute(d) ########
-            with open(output,'w') as o:
-                o.write(template)
-                for i in sorted:
-                    o.write(format(i[0]))
-                    o.write(":")
-                    o.write(str(format(i[1])+"\n"))
+        with open(output,'w') as o:
+            o.write("Ngram analysis result of {s} \n".format(s=output))
+            o.write("#########################################################\n")
+            o.write("Ngram length={n}    Slide length={s}\n".format(n=self.n_length,s=self.s_length))
+            o.write("#########################################################\n")
+            o.write("First 20 Hex value are as follow: \n")
+            o.write("#########################################################\n")
+            for i in sorted:
+                o.write(format(i[0]))
+                o.write(":")
+                o.write(str(format(i[1])+"\n"))
 
 
 def main():

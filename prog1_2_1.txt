@@ -1,10 +1,9 @@
-Static ngram analysis results for prog1
-==========================================
-length_ngrams(n_length) = 2
-length_slide(s_length)  = 1
-Only Top 20 are shown
-++++++++++++++++++++++++++++++++++++++++++
-HEX_VALUE:COUNT
+Ngram analysis result of prog1_2_1.txt 
+#########################################################
+Ngram length=2    Slide length=1
+#########################################################
+First 20 Hex value are as follow: 
+#########################################################
 0000:12375
 ffff:1670
 4889:1597
